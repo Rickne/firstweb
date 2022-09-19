@@ -11,7 +11,7 @@ form.onsubmit = (e) => {
    xhr.onload = () =>{
         if(xhr.readyState == 4 && xhr.status == 200){
             let response = xhr.response;
-            if(response.indexOf("Invalid email address!") != -1 || response.indexOf("Failed to send your message"))
+            if(response.indexOf("Invalid email address!")  || response.indexOf("Failed to send your message"))
             {
             statusTxt.style.color = "#ff4c29";
     
