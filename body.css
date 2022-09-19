@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root {
+    --gold:gold;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--gold);
+    color: #201f1f;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 2rem;
+}
+html::-webkit-scrollbar-track{
+    background: #201f1f;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--gold);
+}
+
+body{
+    background: #201f1f;
+    overflow-x: hidden;
+    padding-left: 40rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    background: #2d2d2d;
+    color: azure;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    border-radius: 5rem;
+}
+.btn i{
+    padding: 0 .5rem;
+    font-size: 2rem;
+}
+.btn:hover{
+    box-sizing: border-box;
+    background: #4b5d67;
+    color: #201f1f;
+}
+
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .2rem solid rgb(82, 78, 78);
+    color: azure;
+}
+.heading span{
+    color: rgb(221, 141, 123);
+    font-weight: 900;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: #2c394b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .5rem solid #59405c;
+}
+
+header .user .name{
+    font-size: 3rem;
+    color: azure;
+}
+header .user .post{
+    font-size: 2rem;
+    color: #87556f;
+    font-weight: 800;
+}
+header .nav-bar{
+    width: 100%;
+}
+header .nav-bar ul{
+    list-style: none;
+    padding: 2rem 3rem;
+}
+header .nav-bar ul li a{
+    display: block;
+    font-weight: 800;
+    margin: 1.5rem 0;
+    padding: 2rem;
+    background: #201f1f;
+    color: azure;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+header .nav-bar ul li a:hover{
+    background: #4b5d67;
+    color: #201f1f;
+}
+
+#menu{
+    position: absolute;
+    top: 1rem;
+    right: .5rem;
+    background: #2d2d2d;
+    color: azure;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    flex-flow: column;
+}
+.home h3{
+    align-items: flex-start;
+    font-size: 5.5rem;
+    color: azure;
+}
+.home h1{
+    font-size: 8rem;
+    color: azure;
+}
+.home h1 span{
+    color: violet;
+
+}
+.home p{
+    font-size: 3rem;
+    color: azure;
+    padding: 1rem 0;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.about .row .info{
+    flex: 1  1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 4rem;
+}
+.about .row .info a{
+    color: #3071e7;
+}
+.about .row .info a:hover{
+    color: #2d2d2d;
+}
+.about .row .info h3{
+    font-size: 2rem;
+    color: rgba(8, 124, 0, 0.718);
+    padding: 1rem 0;
+    font-weight: 600;
+}
+.about .row .info h3 span{
+    color: rgba(240, 255, 255, 0.716);
+    padding: 0 .5rem;
+}
+.about .row .counter{
+    flex: 1  1 48rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 20rem;
+    background: #2d2d2dcf;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+.about .row .counter .box span{
+    font-size: 4rem;
+    font-weight: 800;
+    color: goldenrod;
+}
+.about .row .counter .box h3{
+    font-size: 3rem;
+    font-weight: 500;
+    color: azure;
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+.education .box-container .box i{
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: goldenrod;
+    background: #4b5d67;
+}
+.education .box-container .box{
+    width: 27rem;
+    margin: 3rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid azure;
+    position: relative;
+}
+.education .box-container .box span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: #2d2d2d;
+    color: goldenrod;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+.education .box-container .box h3{
+    font-size: 2.3rem;
+    color: azure;
+    padding-top: 1rem;
+}
+.education .box-container .box h4{
+    font-size: 1.5rem;
+    color: azure;
+    padding: 1rem 0;
+}
+.education .box-container .box p{
+    font-size: 2.3rem;
+    color: goldenrod;
+    padding-top: .5rem 0;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .row form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #625e5e85;
+    color: rgb(205, 205, 205);
+    text-transform: none;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.button-area button{
+    text-transform: none;
+    padding: 1rem 2rem;
+    background: #2d2d2d;
+    color: azure;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    border-radius: 5rem;
+}
+.button-area i{
+    padding: 0 .5rem;
+    font-size: 2rem;
+}
+.button-area button:hover{
+    background: #4b5d67;
+    color: #201f1f;
+}
+.button-area span{
+    text-transform: none;
+    margin: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #1a66f1b1;
+    display: none; 
+}
+.contact .row form .box::placeholder{
+    font-weight: 800;
+}
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: azure;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.contact .row .content .info h3{
+    display: flex;
+    text-transform: none;
+    color: azure;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color: goldenrod;
+}
+
+@media (max-width:1200px){
+    html {
+        font-size: 55%;
+    }
+    .home{
+        padding: 1rem 4rem;
+    }
+}
+
+@media (max-width:768px){
+   header{
+    left: -200%;
+   }
+   #menu{
+    display: block;
+   }
+   header.toggle{
+    left: 0%;
+   }
+   body{
+    padding: 0;
+   }
+   .about .row .info{
+    padding-left: 2rem;
+    }
+  
+}
+@media (max-width:768px){
+    html {
+        font-size: 55%;
+    }
+    header {
+        width: 100vw;
+    }
+}
+@media (max-width:500px) {
+    .home h3{
+    font-size: 6rem;
+    }
+    .home h1{
+    font-size: 6rem;
+    }
+    .home h1 span{
+    font-size: 6rem;
+    }
+}
+@media (max-width:350px) {
+    .home h3{
+    font-size: 3rem;
+    }
+    .home h1{
+    font-size: 3rem;
+    }
+    .home h1 span{
+    font-size: 3rem;
+    }
+    .home p{
+        font-size: 2rem;
+    }
+}
+@media (max-width:992px){
+    
+    .heading{
+        margin: 0 3rem;
+    }
+    .about .row .counter .box{
+        width: 100%;
+    }
+    .education .box-container .box{
+        width: 100%;
+    }
+    .contact .row form{
+        flex-direction: column;
+        text-align: center;
+        margin: 3rem 0;
+    }
+    .contact .row button{
+        align-items: center;
+        width: 100%;
+    }
+}
